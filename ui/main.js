@@ -1,19 +1,9 @@
-console.log('Loaded!');
-
-var element=document.getElementById('maintxt');
-
-element.innerHTML='no Value..';
-
-var img=document.getElementById('madi');
-
-var marginLeft=0;
-function moveright(){
-     marginLeft=marginLeft+10;
-     img.style.marginLeft=marginLeft+'px';
+var button=document.getElementById('counter');
+var counter=0;
+button.onclick=function(){
     
-} 
-
-img.onclick=function(){
-    var interval=setInterval(moveright,50);
+    counter+=1;
+    var span=document.getElementById('count');
+    span.InnerHTML=counter.toString();
     
-};
+}
