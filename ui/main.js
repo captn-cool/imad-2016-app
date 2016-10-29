@@ -1,3 +1,4 @@
+//Counter
 var button=document.getElementById('counter');
 
 button.onclick=function(){
@@ -14,6 +15,7 @@ button.onclick=function(){
         }
     };
     
+    //make the request
     request.open('GET','http://captn-cool.imad.hasura-app.io/counter',true);
     request.send(null);
     
