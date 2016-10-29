@@ -8,7 +8,6 @@ button.onclick=function(){
         if(request.readyState===XMLHttpRequest.DONE){
             if(request.status===200){
                 var counter=request.responseText;
-                counter+=1;
                 var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
             }
